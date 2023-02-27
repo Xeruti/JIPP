@@ -1,0 +1,34 @@
+﻿@model Project.Models.AddStudentViewModel
+
+@{
+}
+
+<h1>Dodaj nowego Studenta</h1>
+
+<form method="post" action="Add">
+
+  <div class="m-3">
+    <label for="" class="form-label">Imie:</label>
+    <input type="text" class="form-control" asp-for="Name">
+  </div>
+
+  <div class="m-3">
+    <label for="" class="form-label">Email:</label>
+    <input type="email" class="form-control" asp-for="Email">
+  </div>
+
+  <div class="m-3">
+    <label for="" class="form-label">Semestr:</label>
+    <input type="number" class="form-control" asp-for="Semester">
+  </div>
+
+  <div class="m-3">
+    <label for="" class="form-label">Specjalizacja:</label>
+    <input type="text" class="form-control" asp-for="Specialization">
+  </div>
+
+  <div class="m-3 text-center">
+  <button type="submit" class="btn btn-success">Dodaj</button>
+  </div>
+
+</form>

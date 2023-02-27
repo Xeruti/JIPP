@@ -1,0 +1,31 @@
+﻿@model List<Project.Models.Domain.Student>
+
+	@{
+	}
+
+	<h1>Baza danych studentów</h1>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Imie</th>
+				<th>Email</th>
+				<th>Semestr</th>
+				<th>Specjalizacja</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var student in Model)
+			{
+				<tr>
+					<td>@student.Id</td>
+					<td>@student.Name</td>
+					<td>@student.Email</td>
+					<td>@student.Semester</td>
+					<td>@student.Specialization</td>
+					<td><a href="Students/View/@student.Id">Edytuj</a></td>
+				</tr>
+			}
+		</tbody>
+	</table>
